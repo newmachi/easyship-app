@@ -1604,7 +1604,10 @@ export default function App() {
         }, EJS_KEY);
       } catch(emailErr){ console.error("Email error:", emailErr); }
       return true;
-    } catch(e){ console.error(e); return false; }
+    } catch(e){ 
+  alert(e.code + " - " + e.message); 
+  return false; 
+}
   };
 
   const handleLogout = async () => {
