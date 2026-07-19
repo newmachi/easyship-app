@@ -1587,7 +1587,7 @@ export default function App() {
   const handleRegister = async ({ name, email, password, phone, company, promoEmails }) => {
     try {
       const cred = await createUserWithEmailAndPassword(auth, email, password);
-      const role = email==="admin@easyship.com"?"admin":"user";
+      const role = email==="mavalour.mc@gmail.com"?"admin":"user";
       const data = {
         name, email, phone:phone||"", company:company||"", role,
         joined: new Date().toLocaleDateString("en-US",{month:"short",year:"numeric"}),
